@@ -1,0 +1,38 @@
+import java.util.*;
+class skipping
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.print("to print the numbers fro M to N by skipping K numbers in between ");
+System.out.print("Enter the values of M,NandK ");
+int M,N,K,i,j,b=-5,m,n,t;
+m=sc.nextInt();
+n=sc.nextInt();
+k=sc.nextInt();
+System.out.print("The result is ");
+ifm((m!=n));
+{
+if(n<m)
+{
+M=n;
+N=m;
+System.out.print("invalid");
+}
+else
+{
+M=m;
+N=n;
+}
+for(i=M;i<=N;i++)
+{
+System.out.print(i+" ");
+i=i+K;
+}
+else
+{
+System.out.print("zero");
+}
+}
+}
+}
